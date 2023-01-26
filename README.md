@@ -6,18 +6,35 @@ PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
+Start python program.
 
 ### Step 2: 
+Open the file using command line arguments
  
 ### Step 3: 
+Using for loop find the word count from the contents of a file
 
 ### Step 4:  
+Display the word count from the contents of a file.
 
 ### Step 5: 
+End the program.
 
-### Step 6: 
+
 
 ## PROGRAM:
+```
+#Name: C Saravanan
+#Reference Number: 22008175
+import sys
+count=0 
+with open(sys.argv[1],'r')  as f:
+    for line in f:    
+        words = line.split()
+        count  += len(words) 
+    print("Number of words present in given file: " + str(count))
+    
+```
 
 ### OUTPUT:
 
